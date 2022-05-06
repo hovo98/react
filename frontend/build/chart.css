@@ -1,0 +1,8 @@
+.chart-gui-wrapper div:nth-child(1) {
+  display: "none"
+}
+
+
+.chart-gui-wrapper {
+	background-color: white
+}

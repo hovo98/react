@@ -1,0 +1,88 @@
+// Bootstrap variables override
+$secondary: #313439;
+$font-size-root: 0.9rem;
+
+@import "./../../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom variables
+$crypto-black: rgb(18, 22, 28);
+
+.filters-widget,
+.orders-widget {
+    background-color: $crypto-black;
+    color: rgb(132, 142, 156);
+
+    &__subtoolbar {
+        background-color: rgba(37, 45, 56, 0.4);
+    }
+
+    .nav-item {
+        font-size: 0.7rem;
+
+        .nav-link {
+            color: rgb(132, 142, 156);
+
+            &.active {
+                background: rgba(240, 185, 11, 0.15);
+                color: rgb(240, 185, 11);
+            }
+        }
+    }
+}
+
+.table {
+    font-size: 0.85rem;
+}
+
+.table-sm>:not(caption)>*>* {
+    padding: 1px;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    font-size: 0.75rem;
+}
+
+.form-check {
+    font-size: 0.75rem;
+}
+
+.text-2 {
+    font-size: 0.8rem;
+}
+
+.text-1 {
+    font-size: 0.75rem;
+}
+
+.smaller-text {
+    font-size: 0.6rem;
+}
+
+.btn-buy {
+    background: linear-gradient(90deg, rgb(0, 192, 135), rgb(65, 222, 221));
+}
+
+.btn-sell {
+    background: linear-gradient(90deg, rgb(234, 0, 112), rgb(252, 84, 179));
+}
+
+.widget-header {
+    background-color: $crypto-black;
+}
+
+#buy-crypto {
+    background-color: $crypto-black;;
+}
+
+#buy-crypto:hover {
+    background-color: $yellow;
+    color: $white;
+}
+
+
+.scrolltbodys {
+    height: 200px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
